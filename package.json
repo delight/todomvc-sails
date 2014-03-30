@@ -1,21 +1,30 @@
 {
-    "name": "todomvc",
-    "private": true,
-    "version": "0.0.0",
-    "description": "a Sails application",
+  "name": "todomvc-sailing",
+  "private": false,
+  "version": "0.0.1",
+  "description": "TodoMVC in sails with angular, socket.io and mongodb",
+  "keywords": [
+    "TodoMVC",
+    "sails",
+    "angular"
+  ],
     "dependencies": {
-        "sails": "0.9.15",
-        "grunt": "0.4.1",
-        "sails-disk": "~0.9.0",
-        "ejs": "0.8.4",
-        "optimist": "0.3.4"
-    },
-    "scripts": {
-        "start": "node app.js",
-        "debug": "node debug app.js"
-    },
-    "main": "app.js",
-    "repository": "",
-    "author": "",
-    "license": ""
+    "ejs": "0.8.4",
+    "grunt": "0.4.1",
+    "optimist": "0.3.4",
+    "sails": "0.9.15",
+    "sails-disk": "~0.9.0",
+    "sails-mongo": "^0.9.7"
+  },
+  "scripts": {
+    "start": "node app.js",
+    "debug": "node debug app.js"
+  },
+  "main": "app.js",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/delight/todomvc-sails.git"
+  },
+  "author": "Konstantinos Kostarellis <2K.devel@gmail.com>",
+  "license": "MIT"
 }
