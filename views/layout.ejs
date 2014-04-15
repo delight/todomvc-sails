@@ -15,7 +15,6 @@
 	<meta name="description" content="Implementation of a TodoMVC app with sails, angular, socket.io and mongodb">
 	<meta name="keywords" content="TodoMVC, sails, sailsjs, sails.js, websocket, socket.io, mongodb,  angular, heroku, cloud, angularjs, angular.js" />
 	<meta name="author" content="Konstantinos Kostarellis" />
-
 	<!-- Viewport mobile tag for sensible mobile support -->
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 	<!--STYLES-->
@@ -32,7 +31,6 @@
 <script src="/bower_components/angular/angular.js"></script>
 <script src="/linker/js/socket.io.js"></script>
 <script src="/bower_components/angular-socket-io/socket.js"></script>
-<script src="/linker/js/ga.js"></script>
 <script src="/linker/js/ng/angular-sails.io.js"></script>
 <script src="/linker/js/ng/app.js"></script>
 <script src="/linker/js/ng/controller/TodoCtrl.js"></script>
@@ -40,6 +38,17 @@
 <script src="/linker/js/ng/directives/todofocus.js"></script>
 <script src="/linker/js/ng/services/sailssocket.js"></script>
 <!--SCRIPTS END-->
+<script>
+var _gaq = _gaq || [];
+_gaq.push(['_setAccount', 'UA-49518967-2']);
+_gaq.push(['_setDomainName', 'todomvc-sails.herokuapp.com']);
+_gaq.push(['_trackPageview']);
+(function() {
+var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+ga.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'stats.g.doubleclick.net/dc.js';
+var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+})();
+</script>
 </body>
 
 </html>
